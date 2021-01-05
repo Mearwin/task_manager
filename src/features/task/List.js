@@ -44,7 +44,7 @@ export function List({ selectedListId, onSelectList }) {
         <div className="collection-item">
           <form className="col s12" onSubmit={e => createList(e)}>
             <div className="row">
-              <div className="input-field col s10">
+              <div className="input-field col s8">
                 <input
                   placeholder="New list"
                   id="new_list"
@@ -54,7 +54,7 @@ export function List({ selectedListId, onSelectList }) {
                   onChange={e => setNewList(e.target.value)}
                 />
               </div>
-              <div className="input-field col s2">
+              <div className="input-field col s4">
                 <button type="submit" className="waves-effect waves-light btn-small"><i className="material-icons">add</i></button>
               </div>
             </div>

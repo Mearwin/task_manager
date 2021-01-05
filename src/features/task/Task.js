@@ -97,7 +97,7 @@ export function Task() {
                       <div className="col s7">{task.description}</div>
 
                       <label className='col s3'>
-                        <input type="checkbox" onClick={() => dispatch(toggleTask({ id: task.id, date: Date.now() }))} />
+                        <input type="checkbox" checked={task.doneOn} onClick={() => dispatch(toggleTask({ id: task.id, date: Date.now() }))} />
                         <span>Done</span>
                       </label>
 
